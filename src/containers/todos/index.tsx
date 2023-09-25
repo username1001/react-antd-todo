@@ -20,17 +20,17 @@ export const TodosContainer: React.FunctionComponent<ITodosContainerProps> = () 
 
   const handleFormSubmit = (todo: ITodo): void => {
     dispatch(addTodo(todo));
-    message.success('Todo added!');
+    message.success('Todo added! ✔');
   };
 
   const handleRemoveTodo = (todo: ITodo): void => {
     dispatch(removeTodo(todo));
-    message.warn('Todo removed!');
+    message.warn('Todo removed! ✔');
   };
 
   const handleToggleTodoStatus = (todo: ITodo): void => {
     dispatch(toggleTodoStatus(todo));
-    message.info('Todo state updated!');
+    message.info('Todo state updated! ✔');
   };
 
   return (
